@@ -48,7 +48,7 @@ module.exports = function (poppins) {
   }
 
   setInterval(function () {
-    if (this.requestQueue.length > 0) {
+    if (poppins.requestQueue.length > 0) {
       return;
     }
     var issue = plugins.digest.nextIssue();
